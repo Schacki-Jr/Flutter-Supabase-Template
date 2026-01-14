@@ -13,8 +13,7 @@ void main() {
     await tester.pumpWidget(
       ProviderScope(
         overrides: [
-          loginControllerProvider
-              .overrideWith(() => _FakeLoginControllerError()),
+          loginControllerProvider.overrideWith(() => _FakeLoginControllerError()),
         ],
         child: const _LocalizedApp(child: LoginScreen()),
       ),
@@ -44,8 +43,6 @@ void main() {
     expect(find.textContaining('Login fehlgeschlagen'), findsOneWidget);
   });
 }
-
-class ShadInput {}
 
 class _FakeLoginControllerError extends LoginController {
   @override
