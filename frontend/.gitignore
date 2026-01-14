@@ -1,0 +1,12 @@
+# Flutter
+.dart_tool/
+.packages
+build/
+ios/Pods/
+pubspec.lock
+
+# Env
+.env
+
+# FVM Version Cache
+.fvm/
